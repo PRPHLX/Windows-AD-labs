@@ -2,7 +2,7 @@
 
 Hands-on notes and labs on Windows administration, Active Directory, and PowerShell — built while preparing for entry-level IT support and system administration roles.
 
-Companion repo to [Networking-labs](https://github.com/Cap1919/Networking-labs).
+Companion repo to [Networking-labs](https://github.com/PRPHLX/Networking-labs).
 
 ## Why this repo
 
@@ -10,27 +10,44 @@ I'm working toward an IT support role, with a longer-term goal of moving into se
 
 Notes are written in my own words rather than copied. When I get something wrong and correct it later, I leave the correction visible — that's part of the record.
 
-## Contents
+## Labs
+
+Each lab simulates real Desktop Support / Service Desk work and includes objective, topology, steps, verification, lessons learned, and a commands reference, with screenshots of what I actually did.
+
+| Lab | Topic | Status |
+|---|---|---|
+| [Lab 01 — Domain Controller Deployment](Lab01-DC-Setup/) | Windows Server 2022 on Proxmox, VirtIO drivers, static IP, AD DS + DNS, new forest `homelab.local` | ✅ Complete |
+| Lab 02 — Domain Structure and Client Join | OUs by department, users, security groups, joining a Windows 11 client | 🔜 Planned |
+| Lab 03 — Help Desk Tickets | Password reset, account unlock, onboarding and offboarding | 🔜 Planned |
+| Lab 04 — File Shares and Mapped Drives | Shared folder with group-based permissions, drive mapping via GPO | 🔜 Planned |
+| Lab 05 — Group Policy and PowerShell | Useful GPOs (wallpaper, password policy) and the same tasks in PowerShell | 🔜 Planned |
+
+## Notes
 
 | File | Topic |
 |---|---|
-| [01-windows-file-system.md](01-windows-file-system.md) | NTFS, the directory structure, environment variables |
-| [02-user-accounts-and-uac.md](02-user-accounts-and-uac.md) | Account types, user creation, User Account Control |
-| [03-powershell-environment.md](03-powershell-environment.md) | The `Env:` drive, discovering commands, PowerShell vs cmd |
-| [04-system-tools.md](04-system-tools.md) | Control Panel, Settings, Task Manager |
+| [01-windows-file-system.md](notes/01-windows-file-system.md) | NTFS, the directory structure, environment variables |
+| [02-user-accounts-and-uac.md](notes/02-user-accounts-and-uac.md) | Account types, user creation, User Account Control |
+| [03-powershell-environment.md](notes/03-powershell-environment.md) | The `Env:` drive, discovering commands, PowerShell vs cmd |
+| [04-system-tools.md](notes/04-system-tools.md) | Control Panel, Settings, Task Manager |
+
+## Lab environment
+
+| Component | Role |
+|---|---|
+| Dell OptiPlex 7060 (i5-8500, 24 GB RAM) | Proxmox VE 9.2 host running **DC01**, a Windows Server 2022 domain controller for `homelab.local` (`192.168.100.10`) |
+| MSI desktop (i7-10700F, 32 GB RAM) | VirtualBox host for Windows 11 domain clients (planned for Lab 02) |
 
 ## Roadmap
 
 - [x] Windows Fundamentals — file system, users, UAC
 - [ ] Windows Fundamentals — system configuration, registry, resource monitoring
-- [ ] Active Directory lab: domain controller, OUs, users, group policy
+- [x] Active Directory: domain controller deployment ([Lab 01](Lab01-DC-Setup/))
+- [ ] Active Directory: OUs, users, groups, client domain join
+- [ ] Active Directory: Group Policy
 - [ ] NTFS vs share permissions — hands-on comparison
 - [ ] PowerShell for support tasks: account lockouts, event logs, services
 - [ ] Windows Event Log analysis
-
-## Lab environment
-
-Planned setup: VirtualBox with a Windows Server evaluation instance as domain controller and a Windows 11 client joined to the domain. Screenshots and configuration notes will be added as the lab is built.
 
 ## Study sources
 
