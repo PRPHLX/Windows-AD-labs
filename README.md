@@ -16,7 +16,7 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 
 | Lab | Topic | Status |
 |---|---|---|
-| [Lab 01 — Domain Controller Deployment](Lab01-DC-Setup/) | Windows Server 2022 on Proxmox, VirtIO drivers, static IP, AD DS + DNS, new forest `homelab.local` | ✅ Complete |
+| [Lab 01 — Domain Controller Deployment](lab-01-dc-setup/) | Windows Server 2022 on Proxmox, VirtIO drivers, static IP, AD DS + DNS, new forest `homelab.local` | ✅ Complete |
 | Lab 02 — Domain Structure and Client Join | OUs by department, users, security groups, joining a Windows 11 client | 🔜 Planned |
 | Lab 03 — Help Desk Tickets | Password reset, account unlock, onboarding and offboarding | 🔜 Planned |
 | Lab 04 — File Shares and Mapped Drives | Shared folder with group-based permissions, drive mapping via GPO | 🔜 Planned |
@@ -31,6 +31,8 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 | [03-powershell-environment.md](notes/03-powershell-environment.md) | The `Env:` drive, discovering commands, PowerShell vs cmd |
 | [04-system-tools.md](notes/04-system-tools.md) | Control Panel, Settings, Task Manager |
 
+These are conceptual notes written in my own words. No room answers, flags, or walkthrough solutions from any training platform are published here.
+
 ## Lab environment
 
 | Component | Role |
@@ -38,14 +40,13 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 | Dell OptiPlex 7060 (i5-8500, 24 GB RAM) | Proxmox VE 9.2 host running **DC01**, a Windows Server 2022 domain controller for `homelab.local` (`192.168.100.10`) |
 | MSI desktop (i7-10700F, 32 GB RAM) | VirtualBox host for Windows 11 domain clients (planned for Lab 02) |
 
-## Roadmap
+## Next topics
 
-- [x] Windows Fundamentals — file system, users, UAC
-- [ ] Windows Fundamentals — system configuration, registry, resource monitoring
-- [x] Active Directory: domain controller deployment ([Lab 01](Lab01-DC-Setup/))
-- [ ] Active Directory: OUs, users, groups, client domain join
-- [ ] Active Directory: Group Policy
-- [ ] NTFS vs share permissions — hands-on comparison
+Beyond the labs listed above, these topics are next in the notes:
+
+- [x] Windows fundamentals: file system, users, UAC
+- [ ] Windows fundamentals: system configuration, registry, resource monitoring
+- [ ] NTFS vs share permissions: hands-on comparison
 - [ ] PowerShell for support tasks: account lockouts, event logs, services
 - [ ] Windows Event Log analysis
 
@@ -54,7 +55,3 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 - TryHackMe — Windows and AD Fundamentals
 - *Learn PowerShell in a Month of Lunches*, 4th edition (Manning)
 - Microsoft Learn documentation
-
----
-
-**Note:** These are conceptual notes. No room answers, flags, or walkthrough solutions from any training platform are published here.

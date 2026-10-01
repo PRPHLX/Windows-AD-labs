@@ -163,6 +163,15 @@ The SRV record test is the most important one: domain clients do not look up the
 
 ---
 
+## Follow-up before Lab 02
+
+Two things this lab surfaced that need to be handled before joining clients to the domain:
+
+- [ ] **Protect the DC's static IP from the router's DHCP pool.** Pinging `192.168.100.10` only proved the address was free at that moment. If it falls inside the home router's DHCP range, the router could later hand it to another device. Fix: exclude it from the DHCP range or create a reservation on the router.
+- [ ] **Point domain clients at the DC for DNS.** The home router still provides DHCP on this LAN, so new clients will receive the router as their DNS server. They would not find the `_ldap._tcp.dc._msdcs` SRV record and the domain join would fail. Fix: set the client's DNS to `192.168.100.10` (or configure the router's DHCP to hand out the DC as DNS).
+
+---
+
 ## Commands reference
 
 | Purpose | Command |
