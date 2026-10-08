@@ -19,7 +19,7 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 | [Lab 01 — Domain Controller Deployment](Lab01-DC-Setup/) | Windows Server 2022 on Proxmox, VirtIO drivers, static IP, AD DS + DNS, new forest `homelab.local` | ✅ Complete |
 | [Lab 02 — Domain Structure and Client Join](Lab02-Domain-Structure/) | OUs by department, users and security groups (GUI + PowerShell), joining a Windows 11 client, VirtualBox/Hyper-V troubleshooting | ✅ Complete |
 | [Lab 03 — Help Desk Tickets](Lab03-Helpdesk-Tickets/) | Password reset, account lockout policy (GPO) and unlock, offboarding and onboarding | ✅ Complete |
-| Lab 04 — File Shares and Mapped Drives | Shared folder with group-based permissions, drive mapping via GPO | 🔜 Planned |
+| [Lab 04 — File Shares and Mapped Drives](Lab04-File-Shares/) | Shared folder with share + NTFS permissions by group, drive S: mapped through a GPO linked to the Sales OU | ✅ Complete |
 | Lab 05 — Group Policy and PowerShell | Useful GPOs (wallpaper, password policy) and the same tasks in PowerShell | 🔜 Planned |
 
 ## Notes
@@ -46,7 +46,7 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 - [x] Active Directory: OUs, users, groups, client domain join ([Lab 02](Lab02-Domain-Structure/))
 - [x] Active Directory: help desk tickets — password reset, lockout, offboarding, onboarding ([Lab 03](Lab03-Helpdesk-Tickets/))
 - [ ] Active Directory: Group Policy
-- [ ] NTFS vs share permissions — hands-on comparison
+- [x] Shared folder: share vs NTFS permissions and a GPO-mapped drive ([Lab 04](Lab04-File-Shares/))
 - [ ] PowerShell for support tasks: account lockouts, event logs, services
 - [ ] Windows Event Log analysis
 
@@ -58,4 +58,4 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 
 ---
 
-**Note:** These are conceptual notes. No room answers, flags, or walkthrough solutions from any training platform are published here.
+**Note:** These are conc
