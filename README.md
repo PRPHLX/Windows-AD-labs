@@ -18,7 +18,7 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 |---|---|---|
 | [Lab 01 — Domain Controller Deployment](Lab01-DC-Setup/) | Windows Server 2022 on Proxmox, VirtIO drivers, static IP, AD DS + DNS, new forest `homelab.local` | ✅ Complete |
 | [Lab 02 — Domain Structure and Client Join](Lab02-Domain-Structure/) | OUs by department, users and security groups (GUI + PowerShell), joining a Windows 11 client, VirtualBox/Hyper-V troubleshooting | ✅ Complete |
-| Lab 03 — Help Desk Tickets | Password reset, account unlock, onboarding and offboarding | 🔜 Planned |
+| [Lab 03 — Help Desk Tickets](Lab03-Helpdesk-Tickets/) | Password reset, account lockout policy (GPO) and unlock, offboarding and onboarding | ✅ Complete |
 | Lab 04 — File Shares and Mapped Drives | Shared folder with group-based permissions, drive mapping via GPO | 🔜 Planned |
 | Lab 05 — Group Policy and PowerShell | Useful GPOs (wallpaper, password policy) and the same tasks in PowerShell | 🔜 Planned |
 
@@ -44,6 +44,7 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 - [ ] Windows Fundamentals — system configuration, registry, resource monitoring
 - [x] Active Directory: domain controller deployment ([Lab 01](Lab01-DC-Setup/))
 - [x] Active Directory: OUs, users, groups, client domain join ([Lab 02](Lab02-Domain-Structure/))
+- [x] Active Directory: help desk tickets — password reset, lockout, offboarding, onboarding ([Lab 03](Lab03-Helpdesk-Tickets/))
 - [ ] Active Directory: Group Policy
 - [ ] NTFS vs share permissions — hands-on comparison
 - [ ] PowerShell for support tasks: account lockouts, event logs, services
