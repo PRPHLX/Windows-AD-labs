@@ -16,7 +16,7 @@ Each lab simulates real Desktop Support / Service Desk work and includes objecti
 
 | Lab | Topic | Status |
 |---|---|---|
-| [Lab 01 — Domain Controller Deployment](Lab01-DC-Setup/) | Windows Server 2022 on Proxmox, VirtIO drivers, static IP, AD DS + DNS, new forest `homelab.local` | ✅ Complete |
+| [Lab 01 — Domain Controller Deployment](lab-01-DC-Setup/) | Windows Server 2022 on Proxmox, VirtIO drivers, static IP, AD DS + DNS, new forest `homelab.local` | ✅ Complete |
 | [Lab 02 — Domain Structure and Client Join](Lab02-Domain-Structure/) | OUs by department, users and security groups (GUI + PowerShell), joining a Windows 11 client, VirtualBox/Hyper-V troubleshooting | ✅ Complete |
 | [Lab 03 — Help Desk Tickets](Lab03-Helpdesk-Tickets/) | Password reset, account lockout policy (GPO) and unlock, offboarding and onboarding | ✅ Complete |
 | [Lab 04 — File Shares and Mapped Drives](Lab04-File-Shares/) | Shared folder with share + NTFS permissions by group, drive S: mapped through a GPO linked to the Sales OU | ✅ Complete |
